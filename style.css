@@ -1,0 +1,353 @@
+body {
+    font-family: "Arial", monospace;
+    flex-direction: column;
+    margin: 0;
+    background-color:whitesmoke
+}
+
+.logo {
+    width: 70px;
+    height: 50px;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background:rgb(106, 90, 205);
+    padding: 5px;
+    z-index: 1000;
+}
+
+.nav-bar a {
+    text-decoration: none;
+}
+
+#close, #menu {
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+#close {
+    visibility: hidden;;
+}
+
+/* visibility is hidden */
+#hamburger-dropdown {
+    /* visibility: visible; */
+    display: none;
+    position: absolute;
+    background: slateblue;
+    right: 0;
+    top: 0;
+    margin-top: 55px;
+    height: fit-content;
+    list-style-type: none;
+    font-size: large;
+    width: 100%;
+    height: 120px;
+    text-align: center;
+    justify-content: center;
+    transition: transform 1s ease-out;
+}
+
+#hamburger-dropdown li{
+    height: 40px;
+}
+
+#hamburger-dropdown li:hover{
+    background: rgb(52, 44, 103)
+}
+
+#hamburger-dropdown a{
+    text-decoration: none;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger-icon {
+    font-size: 25px;
+    color: white;
+    z-index: 100;
+    margin-right: 10px;
+}
+
+
+
+#headers {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#headers h1{
+    font-size: 2.5rem;
+    color: slateblue;
+}
+
+#headers p {
+    font-size: 1.2rem;
+}
+
+#emoji {
+    width: 200px;
+}
+
+#landscape {
+    width: 80%;
+    object-fit: cover;
+    max-height: 400px;
+    max-width: 800px;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+/* this let's me center the intro */
+
+#written-intro-center {
+    display: flex;
+    justify-content: center;
+    background-color: slateblue;
+    padding: 5vh 0 5vh 0;
+}
+
+#introduction {
+    color: white;
+    width: 80%;
+    max-width: 850px;
+}
+
+#introduction h2 {
+    padding-top: 50px;
+    font-size: 25px;
+}
+
+.intro {
+    padding: 1rem;
+    font-size: 1.3rem;
+    line-height: 1.7rem;
+}
+
+
+/* typewriter css */
+.typewriter {
+    overflow: hidden;
+    display: inline-block;
+    border-right: .1em solid slateblue;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: 
+        typing 2s steps(25, end),
+        blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from {width: 0}
+    to {width: 6em}
+}
+
+@keyframes blink-caret {
+    from, to {border-color: transparent}
+    50% {border-color: slateblue}
+}
+
+
+
+/* Designer, Front-end Developer, Data Analyst */
+.icons {
+    font-size: 65px; 
+    color: slateblue;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    text-align: center;
+    justify-content: center;
+    margin: 50px 0 50px 0;
+}
+
+.grid-layout {
+    text-align: center;
+    border-radius: 10px;
+    margin: 5px;
+    height: fit-content;
+    width: 90%;
+    padding: 0 10px 0 10px;
+    font-size: large;
+    align-items: top;
+}
+
+.bold {
+    text-align: center;
+    font-weight: bold;
+    color: slateblue
+}
+
+#recent_work {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+#recent_header {
+    color: slateblue
+}
+
+.work_intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.work_intro p {
+    width: 85%;
+}
+
+.email {
+    text-decoration: none;
+}
+
+.projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.project {
+    border: 3px solid slateblue;
+    border-radius: 25px;
+    width: 300px;
+    height: 250px;
+    image-orientation: center center;
+    object-fit: cover;
+    margin: 10px 50px 10px 50px;
+}
+
+.project:hover {
+    transition: transform 0.5s;
+    transition-timing-function: ease-in-out;
+    transform: scale(1.05);
+}
+
+
+.kaggle {
+    font-size: 1.1rem;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border: 2px solid slateblue;
+    border-radius: 25px;
+}
+
+.kaggle:hover {
+    color: white;
+    background: rgb(106, 90, 205);
+}
+
+
+
+
+
+
+/* This is the footer to end the day */
+.footer {
+    background: slateblue;
+    width: 100%;
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: whitesmoke;
+    margin-top: 25px;
+    position: relative;
+}
+
+.footer_container {
+    position: absolute;
+    bottom: 0;
+}
+
+.email {
+    color:rgb(52, 44, 103)
+}
+
+.small-icon {
+    color: whitesmoke;
+    font-size: 50px;
+    margin: 15px;
+}
+
+.small-icon:hover {
+    color: gold;
+    transition: 0.2s ease;
+}
+
+
+
+
+
+@media only screen and (max-width: 850px) {
+    #introduction {
+        text-align: center;
+        background-color: slateblue;
+        color: white;
+        width: 100%;
+        line-height: 1.4rem;   
+    }
+    
+    #introduction h2 {
+        padding-top: 1rem;
+        font-size: 1.2rem;
+    }
+    
+    .grid {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .grid-layout {
+        width: 80%;
+        font-size: 1.2rem;
+    }
+
+    .projects {
+        width: 100%;
+    }
+
+    .project-container {
+        width: 100%;
+    }
+
+    .project {
+        width: 90%;
+        height: 50vh;
+        margin: 25px 0 25px 0;
+
+    }
+
+    .footer {
+        font-size: small;
+    }
+
+    #top-two-projects, #bottom-two-projects {
+        width: 100%;
+    }
+
+    .kaggle {
+        margin: 5px;
+    }
+}
