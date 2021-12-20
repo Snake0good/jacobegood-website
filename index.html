@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <title>Jacob Good</title>
+</head>
+<body>
+    <div class="nav-bar">
+        <img src="images/dudeMan.png" class="logo">
+        <div id="hamburger-dropdown" class="menu">
+            <li><a href="#name" onclick="hideDropdown()">About</a></li>
+            <li><a href="#recent_work" onclick="hideDropdown()">Projects</a></li>
+            <li><a href="#footer" onclick="hideDropdown()">Contact</a></li>
+        </div>
+        <a href="javascript:void(0);" onclick="hideDropdown()">
+            <i class="fas fa-window-close hamburger-icon" id="close"></i>
+            <i class="fas fa-bars hamburger-icon" id="menu"></i>
+        </a>
+        </div>
+    </div>f
+
+    <div id="headers">
+        <h1>Designer, Front-end Developer and Data Analyst</h1>
+        <p>I teach, design, and code. I also analyze great chunks of data.</p>
+        
+        <h1 id="name" class="hi typewriter">Hi! I'm Jacob</h1>
+
+        <img src="images/jacob_bitmoji copy.png" alt="Jacob Emoji" id="emoji">
+        <img src="images/web_dev_bg.jpeg" alt="landscape" id="landscape">
+    </div>
+
+    <div id="written-intro-center">
+        <div id="introduction">
+            <p class='intro'>I began my journey into programming, web development, and data analytics 5 years ago. Most of my work has focused on educating the next generation of web developers and programmers as a classroom teacher. I have  had a customer focus <i>(ie. student)</i> mentality and would love to do the same for you.</p>
+        </div>
+    </div>
+    
+
+    <div class="grid">
+        <div class="grid-layout">
+            <i class="far fa-edit icons"></i>
+            <h2 class="bold">Designer</h2>
+            <p class="info">I enjoy clean design patterns, thoughtful interactions, and easy to understand connections.</p>
+
+            <p class="bold">Design Tools:</p>
+            <p class="info">Pen and Paper <br> Adobe Sketch <br> Vectornator <br> Figma </p>
+        </div>
+
+        <div class="grid-layout">
+            <i class="fas fa-code icons"></i>
+            <h2 class="bold">Front-end Developer</h2>
+            <p class="info">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+
+
+            <p class="bold">Dev Tools and Languages:</p>
+            <p class="info">HTML, CSS, JS <br> Sublime Text <br> GitHub <br> Bootstrap <br> VS Code <br> </p>
+        </div>
+
+        <div class="grid-layout">
+            <i class="fas fa-database icons"></i>
+            <h2 class="bold">Data Analysis</h2>
+            <p class="info">I'm data driven. I love it. Can't get enough.</p>
+
+            <p class="bold">Certifications:</p>
+            <p id="info" class="info">Google Data Analytics Certification <br> IBM Applied Data Science Specialization <br> Machine Learning Graduate </p>
+        </div>
+    </div>
+
+    <div id="recent_work">
+        <div class="work_intro">
+            <h2 id="recent_header">Recent Work</h2>
+            <p>Here are a few projects that I'm proud of. Want to see more?<strong><a href="mailto: jacobegood@gmail.com" class="email"> Email Me</a></strong></p>
+        </div>
+
+        <div class="projects">
+            <div id="top-two-projects">
+                <div class="project-container"> 
+                    <a href="https://codepen.io/snake0good/full/KKXNNOO" target="_blank"><img class="project" id="norman-borlaug" src="images/norman-borlaug.png"></a>
+                </div>
+                
+                <div class="project-container"> 
+                    <a href="https://codepen.io/snake0good/full/MWEbVvK" target="_blank">
+                    <img class="project" src="images/survey-form.png"></a>
+                </div>
+            </div>
+
+            <div id="bottom-two-projects">
+                <a href="https://www.kaggle.com/jacobegood/bikesharing-google-data-analytics" target="_blank"><div class="project-container"> 
+                    <img class="project" id="bike" src="images/google_bike_sharing.png"></a>
+                </div>
+
+                <div class="project-container"> 
+                    <a href="https://codepen.io/snake0good/full/WNZRowX" target="_blank">
+                    <img class="project" src="images/original-trombones.png"></a>
+                </div>
+            </div>      
+        </div>
+
+        <div class="kaggle-codepen-btns">
+            <a href="https://www.kaggle.com/jacobegood/code" target="_blank"><button class="kaggle">See more on Kaggle</button></a>
+        
+            <a href="https://codepen.io/snake0good" target="_blank"><button class="kaggle codepen">See more on Codepen</button></a>
+        </div>  
+    </div>
+
+
+    <footer class="footer" id="footer">
+        <div class="footer_container">
+            <img src="images/dudeman.png" class="logo">
+            <h3 class="outro">"In battle... plans are useless, but planning is indespensible." - Dwight Eisenhower
+            </h3>
+            <div class="social">
+                <a href="https://twitter.com/jacobegood" target="_blank"><i class="fab fa-twitter-square small-icon"></i></a>
+                <a href="https://www.linkedin.com/in/jacobegood/" target="_blank"><i class="fab fa-linkedin small-icon"></i></a>
+                <a href="https://www.kaggle.com/jacobegood/code" target="_blank"><i class="fab fa-kaggle small-icon"></i></a>
+                <a href="https://www.github.com/Snake0good" target="_blank"><i class="fab fa-github small-icon"></i></a>
+
+                
+            </div>
+            <a href="mailto: jacobegood@gmail.com" class="email"> jacobegood@gmail.com</a>
+            <p>Handcrafted by me &copy; jacobegood</p>
+        </div>
+    </footer>
+</body>
+</html>
