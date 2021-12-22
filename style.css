@@ -257,6 +257,63 @@ body {
 
 
 
+/* Contact Container and details */
+#contact-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    background-color: whitesmoke;
+    border: 1px solid slateblue;
+    color: rgb(60, 50, 115);
+    padding: 15px;
+    border-radius: 15px;
+    margin: 50px auto;
+    justify-content: center;
+}
+
+#contact-directions {
+    margin: 0 15px 25px 15px ;
+    font-size: 0.8rem;
+}
+
+#contact-title {
+    margin: 0 0 5px 0;
+    text-align: center;
+}
+
+.btn, .input {
+    height: 30px;
+}
+
+.input, #message {
+    padding: 0 0 0 5px;
+    margin: 0 0 15px 0;
+}
+
+#message {
+    resize: none;
+}
+
+.btn {
+    background-color: slateblue;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    width: 50%;
+    align-self: center;
+    font-weight: bold;
+}
+
+.btn:hover {
+    color: black;
+    border: 1px solid slateblue;
+    background-color: white;
+}
+
+
+
+
+
 
 
 /* This is the footer to end the day */
