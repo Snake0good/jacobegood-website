@@ -1,6 +1,8 @@
 body {
     font-family: "Arial", monospace;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     background-color:whitesmoke
 }
@@ -76,26 +78,42 @@ body {
     margin-right: 10px;
 }
 
-
-
-#headers {
+#main-header h1{
     text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-#headers h1{
     font-size: 2.5rem;
     color: slateblue;
 }
 
-#headers p {
-    font-size: 1.2rem;
+#headers {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-#emoji {
-    width: 200px;
+.left-side-header {
+    color: slateblue;
+    margin-right: 50px;
+}
+
+#headers h1{
+    font-size: 2.5rem;
+}
+
+#headers p {
+    font-size: 1.2rem;
+    color: slateblue;
+}
+
+.right-side-header {
+    align-items: center;
+    justify-content: center;
+}
+
+#picture {
+    width: 250px;
+    margin: 0 0 25px 0;
+    border-radius: 25%;
 }
 
 #landscape {
@@ -128,7 +146,7 @@ body {
 }
 
 .intro {
-    padding: 1rem;
+    padding: 1.5rem;
     font-size: 1.3rem;
     line-height: 1.7rem;
 }
@@ -142,13 +160,13 @@ body {
     white-space: nowrap;
     margin: 0 auto;
     animation: 
-        typing 2s steps(25, end),
-        blink-caret .75s step-end infinite;
+        typing 2.5s steps(17, end),
+        blink-caret .55s step-end infinite;
 }
 
 @keyframes typing {
     from {width: 0}
-    to {width: 6em}
+    to {width: 6.2em}
 }
 
 @keyframes blink-caret {
@@ -230,13 +248,17 @@ body {
     height: 250px;
     image-orientation: center center;
     object-fit: cover;
-    margin: 10px 50px 10px 50px;
+    margin: 10px 20px 10px 20px;
 }
 
 .project:hover {
     transition: transform 0.5s;
     transition-timing-function: ease-in-out;
     transform: scale(1.05);
+}
+
+.kaggle-codepen-btns {
+    margin: 35px;
 }
 
 
@@ -247,6 +269,7 @@ body {
     height: 50px;
     border: 2px solid slateblue;
     border-radius: 25px;
+    margin: 25px
 }
 
 .kaggle:hover {
@@ -257,7 +280,14 @@ body {
 
 
 
+
+
+
 /* Contact Container and details */
+.form-div, .footer_container {
+    padding: 5px
+}
+
 #contact-container {
     display: flex;
     flex-direction: column;
@@ -293,6 +323,7 @@ body {
     border-radius: 2px;
 }
 
+
 #message {
     resize: none;
     padding-top: 5px;
@@ -324,11 +355,9 @@ body {
 .footer {
     background: slateblue;
     width: 100%;
-    height: 35vh;
-    display: flex;
-    flex-direction: column;
+    height: fit-content;
+    display: inline-flex;
     justify-content: center;
-    text-align: center;
     align-items: center;
     color: whitesmoke;
     margin-top: 25px;
@@ -336,8 +365,17 @@ body {
 }
 
 .footer_container {
-    position: absolute;
     bottom: 0;
+    margin-left: 50px;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_container h3 {
+    text-align: center;
+    padding: 25px
 }
 
 .email {
@@ -352,11 +390,8 @@ body {
 
 .small-icon:hover {
     color: gold;
-    transition: 0.2s ease;
+    transform: scale(1.);
 }
-
-
-
 
 
 @media only screen and (max-width: 850px) {
@@ -371,6 +406,22 @@ body {
     #introduction h2 {
         padding-top: 1rem;
         font-size: 1.2rem;
+    }
+
+    #headers {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #main-header h1 {
+        font-size: 1.5rem;
+    }
+
+    .left-side-header {
+        color: slateblue;
+        margin: auto;
     }
     
     .grid {
@@ -400,15 +451,26 @@ body {
 
     }
 
+    #contact-container {
+        width: fit-content
+    }
+
     .footer {
         font-size: small;
+        flex-direction: column;
+    }
+
+    .footer_container {
+        margin: 0
     }
 
     #top-two-projects, #bottom-two-projects {
         width: 100%;
     }
 
-    .kaggle {
-        margin: 5px;
+    .social {
+       width: 100%;
+       display: inline-flex;
+       justify-content: space-evenly;
     }
 }
