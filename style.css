@@ -1,3 +1,19 @@
+:root {
+    --main-header-color: #173F5F;
+    --main-light-color: #3CAEA3; 
+    --highlight-color: #F6D55C;
+
+    --orange-color: #f4a261;
+    --red-color: #e76f51;
+    --blue-color: #264653;
+    --green-color: #2a9d8f;
+    --yellow-color: #e9c46a;
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: "Arial", monospace;
     flex-direction: column;
@@ -7,10 +23,88 @@ body {
     background-color:whitesmoke
 }
 
+.topNav {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 200;
+    top: 0;
+    left: 0;
+    background-color: var(--blue-color);
+    overflow-y: hidden;
+    transition: 0.5s;
+    display: inline-flex;
+}
+
+.page-links {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: 1.5rem;
+    width: 100%;
+    padding: 1.5rem 0;
+    text-align: center;
+}
+
+.topNav a {
+    text-decoration: none;
+    color: var(--yellow-color);
+    display: block;
+    transition: 0.5s;
+}
+
+.topNav a:hover {
+    color: var(--red-color)
+}
+
+.closebtn {
+    margin-right: 5px;
+    top: 5px;
+    font-size: 3rem;
+    position: absolute;
+    right: 0;
+}
+
+
 .logo {
     width: 70px;
     height: 50px;
+    opacity: 1;
+    transition: 0.2s;
+    z-index: 1;
+    top: 0;
+    left: 0;
 }
+
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: sticky;
+    top: 0;
+    background: var(--blue-color);
+    padding: 5px;
+    z-index: 2;
+}
+
+.nav-bar span {
+    font-size: 2rem;
+    color: var(--yellow-color);
+    top: 0;
+    right: 0;
+}
+
+.nav-bar span:hover {
+    cursor: pointer;
+}
+
+
+/* all nav-bar, menu, close, hamburger dropdown ---  below is out */
+
+/*
+
+
 
 .nav-bar {
     display: flex;
@@ -18,7 +112,7 @@ body {
     justify-content: space-between;
     position: sticky;
     top: 0;
-    background:rgb(106, 90, 205);
+    background: var(--main-header-color);
     padding: 5px;
     z-index: 1000;
 }
@@ -37,12 +131,15 @@ body {
     visibility: hidden;;
 }
 
-/* visibility is hidden */
+#close:hover {
+    color: var(--main-light-color)
+}
+
+
 #hamburger-dropdown {
-    /* visibility: visible; */
     display: none;
     position: absolute;
-    background: slateblue;
+    background: var(--main-header-color);
     right: 0;
     top: 0;
     margin-top: 55px;
@@ -52,16 +149,21 @@ body {
     width: 100%;
     height: 120px;
     text-align: center;
+    align-items: center;
     justify-content: center;
-    transition: transform 1s ease-out;
 }
+
+
 
 #hamburger-dropdown li{
     height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #hamburger-dropdown li:hover{
-    background: rgb(52, 44, 103)
+    background: var(--main-light-color)
 }
 
 #hamburger-dropdown a{
@@ -78,10 +180,15 @@ body {
     margin-right: 10px;
 }
 
-#main-header h1{
+*/
+
+
+
+
+.main-header h1{
     text-align: center;
     font-size: 2.5rem;
-    color: slateblue;
+    color: var(--main-header-color);
 }
 
 #headers {
@@ -92,7 +199,7 @@ body {
 }
 
 .left-side-header {
-    color: slateblue;
+    color: var(--main-header-color);
     margin-right: 50px;
 }
 
@@ -102,7 +209,7 @@ body {
 
 #headers p {
     font-size: 1.2rem;
-    color: slateblue;
+    color: var(--main-header-color);
 }
 
 .right-side-header {
@@ -130,7 +237,7 @@ body {
 #written-intro-center {
     display: flex;
     justify-content: center;
-    background-color: slateblue;
+    background-color: var(--main-header-color);
     padding: 5vh 0 5vh 0;
 }
 
@@ -156,7 +263,7 @@ body {
 .typewriter {
     overflow: hidden;
     display: inline-block;
-    border-right: .1em solid slateblue;
+    border-right: .1em solid var(--main-header-color);
     white-space: nowrap;
     margin: 0 auto;
     animation: 
@@ -171,7 +278,7 @@ body {
 
 @keyframes blink-caret {
     from, to {border-color: transparent}
-    50% {border-color: slateblue}
+    50% {border-color: var(--main-header-color)}
 }
 
 
@@ -179,7 +286,7 @@ body {
 /* Designer, Front-end Developer, Data Analyst */
 .icons {
     font-size: 65px; 
-    color: slateblue;
+    color: var(--main-header-color);
 }
 
 .grid {
@@ -204,7 +311,7 @@ body {
 .bold {
     text-align: center;
     font-weight: bold;
-    color: slateblue
+    color: var(--main-header-color)
 }
 
 #recent_work {
@@ -217,7 +324,7 @@ body {
 }
 
 #recent_header {
-    color: slateblue
+    color: var(--main-header-color)
 }
 
 .work_intro {
@@ -242,7 +349,7 @@ body {
 }
 
 .project {
-    border: 3px solid slateblue;
+    border: 3px solid var(--main-header-color);
     border-radius: 25px;
     width: 300px;
     height: 250px;
@@ -267,14 +374,14 @@ body {
     cursor: pointer;
     width: 200px;
     height: 50px;
-    border: 2px solid slateblue;
+    border: 2px solid var(--main-header-color);
     border-radius: 25px;
     margin: 25px
 }
 
 .kaggle:hover {
     color: white;
-    background: rgb(106, 90, 205);
+    background: var(--main-header-color);
 }
 
 
@@ -293,8 +400,8 @@ body {
     flex-direction: column;
     width: 300px;
     background-color: whitesmoke;
-    border: 1px solid slateblue;
-    color: rgb(60, 50, 115);
+    border: 1px solid var(--main-header-color);
+    color: var(--main-header-color);
     padding: 15px;
     border-radius: 15px;
     margin: 50px auto;
@@ -303,7 +410,7 @@ body {
 
 #contact-directions {
     margin: 0 15px 25px 15px ;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 #contact-title {
@@ -330,7 +437,7 @@ body {
 }
 
 .btn {
-    background-color: slateblue;
+    background-color: var(--main-header-color);
     border: none;
     border-radius: 25px;
     color: white;
@@ -341,7 +448,7 @@ body {
 
 .btn:hover {
     color: black;
-    border: 1px solid slateblue;
+    border: 1px solid var(--main-header-color);
     background-color: white;
 }
 
@@ -353,7 +460,7 @@ body {
 
 /* This is the footer to end the day */
 .footer {
-    background: slateblue;
+    background: var(--main-header-color);
     width: 100%;
     height: fit-content;
     display: inline-flex;
@@ -366,7 +473,6 @@ body {
 
 .footer_container {
     bottom: 0;
-    margin-left: 50px;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -379,7 +485,7 @@ body {
 }
 
 .email {
-    color:rgb(52, 44, 103)
+    color: var(--main-light-color)
 }
 
 .small-icon {
@@ -389,20 +495,19 @@ body {
 }
 
 .small-icon:hover {
-    color: gold;
+    color: var(--main-light-color);
     transform: scale(1.);
 }
 
-
-@media only screen and (max-width: 850px) {
+@media only screen and (max-width: 700px) {
     #introduction {
         text-align: center;
-        background-color: slateblue;
+        background-color: var(--main-header-color);
         color: white;
         width: 100%;
         line-height: 1.4rem;   
     }
-    
+
     #introduction h2 {
         padding-top: 1rem;
         font-size: 1.2rem;
@@ -420,17 +525,17 @@ body {
     }
 
     .left-side-header {
-        color: slateblue;
+        color: var(--main-header-color);
         margin: auto;
     }
-    
+
     .grid {
         display: flex;
         align-items: center;
         flex-direction: column;
         width: 100%;
     }
-    
+
     .grid-layout {
         width: 80%;
         font-size: 1.2rem;
@@ -451,20 +556,9 @@ body {
 
     }
 
-    #contact-container {
-        width: fit-content
-    }
-
     .footer {
-        font-size: small;
+        font-size: 1rem;
         flex-direction: column;
-    }
-
-    .footer_container {
-        margin: 0
-    }
-
-    #top-two-projects, #bottom-two-projects {
         width: 100%;
     }
 
