@@ -5,15 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js" defer></script>
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    
     <title>Jacob Good</title>
 </head>
 <body>
+
+<!-- 
+
     <div class="nav-bar">
         <img src="images/dudeMan.png" class="logo">
         <div id="hamburger-dropdown" class="menu">
-            <li><a href="#name" onclick="hideDropdown()">About</a></li>
+            <li><a href="#about" onclick="hideDropdown()">About</a></li>
             <li><a href="#recent_work" onclick="hideDropdown()">Projects</a></li>
             <li><a href="#footer" onclick="hideDropdown()">Contact</a></li>
         </div>
@@ -24,7 +29,31 @@
         </div>
     </div>
 
-    <div id="main-header">
+-->
+    
+    <div class="nav-bar">
+        <!-- 
+        <img src="images/dudeMan.png" id="logo" class="logo">
+        -->
+        <div id="myTopNav" class="topNav">
+            <div class="page-links">
+                <a href="#about">About</a>
+                <a href="#recent_work">Projects</a>
+                <a href="#footer">Contact</a>
+            </div>
+            <a href="javascxript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        </div>
+        <span href="javascript:void(0);" onclick="openNav()">&#9776</span>
+        </div>
+    </div>
+
+    
+
+
+
+
+
+    <div id="about" class="main-header">
         <h1>Designer, Front-end Developer and Data Analyst</h1>
     </div>
     
@@ -37,7 +66,7 @@
         </div>
         
         <div class="right-side-header">
-            <img src="images/jacob_bag.jpeg" alt="Jacob Emoji" id="picture">
+            <img src="images/jacob_bag.jpeg" alt="Jacob Emoji" id="picture" data-aos="zoom-in" data-aos-duration="1500">
             <!-- <img src="images/web_dev_bg.jpeg" alt="landscape" id="landscape"> -->
         </div>
         
@@ -50,25 +79,25 @@
         </div>
 
         <div class="projects">
-                <div class="project-container"> 
+                <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                     <a href="https://codepen.io/snake0good/full/KKXNNOO" target="_blank"><img class="project" id="norman-borlaug" src="images/norman-borlaug.png"></a>
                 </div>
                 
-                <div class="project-container"> 
+                <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                     <a href="https://codepen.io/snake0good/full/MWEbVvK" target="_blank">
                     <img class="project" src="images/survey-form.png"></a>
                 </div>
 
-                <a href="https://www.kaggle.com/jacobegood/bikesharing-google-data-analytics" target="_blank"><div class="project-container"> 
+                <a href="https://www.kaggle.com/jacobegood/bikesharing-google-data-analytics" target="_blank"><div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                     <img class="project" id="bike" src="images/google_bike_sharing.png"></a>
                 </div>
 
-                <div class="project-container"> 
+                <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                     <a href="https://joke-telling-js-20-projects.netlify.app/" target="_blank">
                     <img class="project" src="images/joke-teller.png"></a>
                 </div>
 
-                <div class="project-container"> 
+                <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                     <a href="https://js20-projects-quote-generator.netlify.app/" target="_blank">
                     <img class="project" src="images/quote-generator.png"></a>
                 </div>
@@ -90,7 +119,7 @@
     
 
     <div class="grid">
-        <div class="grid-layout">
+        <div class="grid-layout" data-aos="fade-up" data-aos-duration="1000">
             <i class="far fa-edit icons"></i>
             <h2 class="bold">Designer</h2>
             <p class="info">I enjoy clean design patterns, thoughtful interactions, and easy to understand connections.</p>
@@ -99,7 +128,7 @@
             <p class="info">Pen and Paper <br> Adobe Sketch <br> Vectornator <br> Figma </p>
         </div>
 
-        <div class="grid-layout">
+        <div class="grid-layout" data-aos="fade-up" data-aos-duration="1000">
             <i class="fas fa-code icons"></i>
             <h2 class="bold">Front-end Developer</h2>
             <p class="info">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
@@ -109,7 +138,7 @@
             <p class="info">HTML, CSS, JS <br> Sublime Text <br> GitHub <br> Bootstrap <br> VS Code <br> </p>
         </div>
 
-        <div class="grid-layout">
+        <div class="grid-layout" data-aos="fade-up" data-aos-duration="1000">
             <i class="fas fa-database icons"></i>
             <h2 class="bold">Data Analysis</h2>
             <p class="info">I'm data driven. I love it. Can't get enough.</p>
@@ -127,7 +156,6 @@
         <div class="form-div">   
             <form action="https://formsubmit.co/b48ed778ae9db8286495eadc0e3120ed" name="myform" method="POST" id="contact-container">
                 <h1 id="contact-title">Send a message</h1>
-                <p id="contact-directions">If you want to get in touch with me for future projects or just want to say hello.</p>
         
                 <label for="name">Name</label>
                 <input class="input" name="name" id="name" type="text" placeholder="Enter your name" required>
@@ -143,9 +171,9 @@
         </div>
 
         <div class="footer_container">
-            <img src="images/dudeman.png" class="logo">
+            <img src="images/dudeman.png" class="logo bottom-logo">
             <div class="quote-div">
-                <h3 class="outro">"In battle... plans are useless, but planning is indespensible." - Dwight Eisenhower</h3>
+                <h3 class="outro">"In battle, plans are useless, but planning is indespensible." - Dwight Eisenhower</h3>
             </div>
             <div class="social">
                 <a href="https://twitter.com/jacobegood" target="_blank"><i class="fab fa-twitter-square small-icon"></i></a>
@@ -158,5 +186,8 @@
             <p>Handcrafted by me &copy; jacobegood</p>
         </div>
     </footer>
+
+    <script src="script.js" defer></script>
+    <script src="aos.js"></script>
 </body>
 </html>
