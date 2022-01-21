@@ -1,15 +1,18 @@
-function hideDropdown() {
-  var dropdown = document.getElementById("hamburger-dropdown");
-  var menu = document.getElementById("menu")
-  var close = document.getElementById("close")
+const logo = document.getElementById('logo')
+const topNav = document.getElementById('myTopNav')
 
-  if (dropdown.style.display === 'block') {
-    dropdown.style.display = "none";
-    menu.style.visibility = "visible"
-    close.style.visibility = "hidden"
-  } else {
-    dropdown.style.display = "block";
-    menu.style.visibility = "hidden"
-    close.style.visibility = "visible"
-  }
+window.onscroll = function() {
+  topNav.style.height='0'
+  logo.style.opacity = '0'
+}
+
+
+function openNav() {
+  topNav.style.height = "200px"
+  logo.style.opacity = '0'
+}
+
+function closeNav() {
+  topNav.style.height = "0";
+  logo.style.opacity = '1'
 }
