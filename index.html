@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    
     <title>Jacob Good</title>
 </head>
 <body>
@@ -29,7 +31,7 @@
 
 -->
     
-    <div class="nav-bar">
+    <div id="nav-bar" class="nav-bar">
         <!-- 
         <img src="images/dudeMan.png" id="logo" class="logo">
         -->
@@ -73,31 +75,50 @@
     <div id="recent_work">
         <div class="work_intro">
             <h2 id="recent_header">Recent Work</h2>
-            <p>Here are a few projects that I'm proud of. Want to see more?<strong><a href="mailto: jacobegood@gmail.com" class="email"> Email Me</a></strong></p>
+            <p>Here are a few projects. <br> Want to see more?<strong><a href="contact" class="email"> Send me a message </a></strong></p>
         </div>
 
         <div class="projects">
                 <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
+                    <a href="https://js20-light-dark-mode.netlify.app/" target="_blank">
+                    <img class="project" src="images/light-dark-travel-website.png"></a>
+                    <p class="project-title">Light/Dark Travel Website</p>
+                    <p>Tech: DOM, localStorage</p>
+                </div>
+
+                <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                     <a href="https://codepen.io/snake0good/full/KKXNNOO" target="_blank"><img class="project" id="norman-borlaug" src="images/norman-borlaug.png"></a>
+                    <p class="project-title">Tribute Page</p>
+                    <p>Tech: HTML, CSS</p>
+                </div>
+
+                <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
+                    <a href="https://bankcat-website-mockup.netlify.app/" target="_blank">
+                    <img class="project" src="images/bankCatWebpage.png"></a>
+                    <p class="project-title">Bank Website</p>
+                    <p>Tech: HTML, CSS, JS</p>
                 </div>
                 
                 <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                     <a href="https://codepen.io/snake0good/full/MWEbVvK" target="_blank">
                     <img class="project" src="images/survey-form.png"></a>
+                    <p class="project-title">Survey Form</p>
+                    <p>Tech: HTML, CSS</p>
                 </div>
 
-                <a href="https://www.kaggle.com/jacobegood/bikesharing-google-data-analytics" target="_blank"><div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
-                    <img class="project" id="bike" src="images/google_bike_sharing.png"></a>
-                </div>
 
                 <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
-                    <a href="https://joke-telling-js-20-projects.netlify.app/" target="_blank">
-                    <img class="project" src="images/joke-teller.png"></a>
+                    <a href="https://www.kaggle.com/jacobegood/bikesharing-google-data-analytics" target="_blank">
+                    <img class="project" id="bike" src="images/google_bike_sharing.png"></a>
+                    <p class="project-title">Bikesharing Data Analytics</p>
+                    <p>Tech: R, tidyverse, ggplot2</p>
                 </div>
 
                 <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                     <a href="https://js20-projects-quote-generator.netlify.app/" target="_blank">
                     <img class="project" src="images/quote-generator.png"></a>
+                    <p class="project-title">Bank Website</p>
+                    <p>Tech: Fetch, Quote API</p>
                 </div>
         </div>
 
@@ -120,7 +141,7 @@
         <div class="grid-layout" data-aos="fade-up" data-aos-duration="1000">
             <i class="far fa-edit icons"></i>
             <h2 class="bold">Designer</h2>
-            <p class="info">I enjoy clean design patterns, thoughtful interactions, and easy to understand connections.</p>
+            <p class="info">I like to see simple yet effecive design and intuitive interactions.</p>
 
             <p class="bold">Design Tools:</p>
             <p class="info">Pen and Paper <br> Adobe Sketch <br> Vectornator <br> Figma </p>
@@ -138,11 +159,16 @@
 
         <div class="grid-layout" data-aos="fade-up" data-aos-duration="1000">
             <i class="fas fa-database icons"></i>
-            <h2 class="bold">Data Analysis</h2>
-            <p class="info">I'm data driven. I love it. Can't get enough.</p>
+            <h2 class="bold">Data Analyst</h2>
 
-            <p class="bold">Certifications:</p>
-            <p id="info" class="info">Google Data Analytics Certification <br> IBM Applied Data Science Specialization <br> Machine Learning Graduate </p>
+            <p id="info" class="info">
+                <a href="https://coursera.org/share/fd485fb1ff1d5be4360c37518ddd31e6" target="_blank"> Google Data Analytics Certification<i class="icon fas fa-arrow-right"></i></a> 
+                <br> 
+                <a href="https://coursera.org/share/de3a4dfd9f3d1017d6e9ca3d3ee71217" target="_blank">IBM Applied Data Science Specialization<i class="icon fas fa-arrow-right"></i></a> 
+            </p>
+
+            <p class="bold">Tech:</p>
+            <p class="info">Python, R <br> pandas, numpy <br> tidyverse, ggplot2 <br> Tensorflow </p>
         </div>
     </div>
 
@@ -171,7 +197,7 @@
         <div class="footer_container">
             <img src="images/dudeman.png" class="logo bottom-logo">
             <div class="quote-div">
-                <h3 class="outro">"In battle, plans are useless, but planning is indespensible." - Dwight Eisenhower</h3>
+                <h3 class="outro">"In battle, plans are useless, but planning is indispensible." - Dwight D. Eisenhower</h3>
             </div>
             <div class="social">
                 <a href="https://twitter.com/jacobegood" target="_blank"><i class="fab fa-twitter-square small-icon"></i></a>
@@ -186,7 +212,6 @@
     </footer>
 
     <script src="script.js" defer></script>
-    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>    
-    <script>AOS.init()</script>
+    <script src="aos.js"></script>
 </body>
 </html>

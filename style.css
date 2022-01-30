@@ -19,8 +19,14 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0;
-    background-color:whitesmoke
+    margin: auto;
+    background-color:whitesmoke;
+    overflow-x: hidden;
+}
+
+#nav-bar {
+    opacity: 1;
+    transition: 0.5s;
 }
 
 .topNav {
@@ -30,7 +36,7 @@ body {
     z-index: 200;
     top: 0;
     left: 0;
-    background-color: var(--blue-color);
+    background-color: var(--main-header-color);
     overflow-y: hidden;
     transition: 0.5s;
     display: inline-flex;
@@ -83,7 +89,7 @@ body {
     justify-content: end;
     position: sticky;
     top: 0;
-    background: var(--blue-color);
+    background: var(--main-header-color);
     padding: 5px;
     z-index: 2;
 }
@@ -238,7 +244,7 @@ body {
     display: flex;
     justify-content: center;
     background-color: var(--main-header-color);
-    padding: 5vh 0 5vh 0;
+    padding: 5vh 0;
 }
 
 #introduction {
@@ -308,6 +314,18 @@ body {
     align-items: top;
 }
 
+.info a {
+    color: black;
+    text-decoration: none;
+}
+
+.info .icon {
+    margin-left: 5px;
+    font-size: 1rem;
+    color: var(--main-light-color)
+}
+
+
 .bold {
     text-align: center;
     font-weight: bold;
@@ -324,7 +342,8 @@ body {
 }
 
 #recent_header {
-    color: var(--main-header-color)
+    color: var(--main-header-color);
+    margin-bottom: 0;
 }
 
 .work_intro {
@@ -340,6 +359,21 @@ body {
 
 .email {
     text-decoration: none;
+}
+
+.project-container p {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+.project-title {
+    color: var(--main-header-color);
+    font-weight: bolder;
+}
+
+.project-container img {
+    margin-bottom: 5px;
 }
 
 .projects {
@@ -461,14 +495,14 @@ body {
 /* This is the footer to end the day */
 .footer {
     background: var(--main-header-color);
-    width: 100%;
+    width: 100vw;
     height: fit-content;
     display: inline-flex;
     justify-content: center;
     align-items: center;
     color: whitesmoke;
-    margin-top: 25px;
     position: relative;
+    padding: 0 25px;
 }
 
 .footer_container {
@@ -477,6 +511,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%;
 }
 
 .footer_container h3 {
@@ -507,7 +542,7 @@ body {
         width: 100%;
         line-height: 1.4rem;   
     }
-
+    
     #introduction h2 {
         padding-top: 1rem;
         font-size: 1.2rem;
@@ -528,17 +563,18 @@ body {
         color: var(--main-header-color);
         margin: auto;
     }
-
+    
     .grid {
         display: flex;
         align-items: center;
         flex-direction: column;
         width: 100%;
     }
-
+    
     .grid-layout {
         width: 80%;
         font-size: 1.2rem;
+        margin: 20px 5px;
     }
 
     .projects {
@@ -553,18 +589,40 @@ body {
         width: 90%;
         height: 50vh;
         margin: 25px 0 25px 0;
-
     }
 
     .footer {
         font-size: 1rem;
         flex-direction: column;
         width: 100%;
+        padding: 0;
+
     }
 
     .social {
        width: 100%;
        display: inline-flex;
        justify-content: space-evenly;
+    }
+
+    #contact-container {
+        max-width: 80vw;
+        margin: 5px 0;
+    }
+
+}
+
+@media only screen and (max-width: 500px) {
+    #picture {
+        width: 200px;
+        object-fit: cover;
+    }
+    
+    .project {
+        height: 30vh;
+    }
+
+    .kaggle {
+        margin: 5px;
     }
 }
