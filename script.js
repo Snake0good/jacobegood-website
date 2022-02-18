@@ -20,6 +20,7 @@ function hideDropdown() {
 const topNav = document.getElementById('myTopNav')
 const navBar = document.getElementById("nav-bar")
 
+/*
 window.onscroll = function() {
   topNav.style.height='0';
   navBar.style.opacity = '0';
@@ -28,6 +29,7 @@ window.onscroll = function() {
 window.onclick = function() {
   navBar.style.opacity = '1';
 }
+*/
 
 function openNav() {
   topNav.style.height = "200px";
