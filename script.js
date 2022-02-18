@@ -15,21 +15,23 @@ function hideDropdown() {
   }
 }
 
-*/
-
-const topNav = document.getElementById('myTopNav')
-const navBar = document.getElementById("nav-bar")
-
-/*
-window.onscroll = function() {
-  topNav.style.height='0';
-  navBar.style.opacity = '0';
-}
-
+// shows the navBar on a click
 window.onclick = function() {
   navBar.style.opacity = '1';
 }
 */
+
+
+
+
+const topNav = document.getElementById('myTopNav')
+const navBar = document.getElementById("nav-bar")
+
+
+// hides the nav options with a scroll
+window.onscroll = function() {
+  topNav.style.height='0';
+}
 
 function openNav() {
   topNav.style.height = "200px";
