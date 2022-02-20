@@ -20,7 +20,9 @@ body {
     justify-content: center;
     align-items: center;
     margin: 0;
+    padding: 0;
     background-color:whitesmoke;
+    width: 100vw;
     overflow-x: hidden;
 }
 
@@ -33,7 +35,7 @@ body {
     top: 0;
     left: 0;
     background-color: var(--main-header-color);
-    overflow-y: hidden;
+    overflow-x: hidden;
     transition: 0.5s;
     display: inline-flex;
 }
@@ -53,18 +55,17 @@ body {
     color: var(--yellow-color);
     display: block;
     transition: 0.5s;
-}
+}v
 
 .topNav a:hover {
     color: var(--red-color)
 }
 
 .closebtn {
-    margin-right: 5px;
-    top: 5px;
+    top: 3px;
     font-size: 3rem;
     position: absolute;
-    right: 0;
+    right: 5px;
 }
 
 
@@ -92,7 +93,7 @@ body {
     position: sticky;
     top: 0;
     background: var(--main-header-color);
-    padding: 5px;
+    margin: 0;
     z-index: 2;
 }
 
@@ -100,6 +101,7 @@ body {
     font-size: 2.1rem;
     padding-right: 10px;
     color: var(--yellow-color);
+    padding: 5px;
 }
 
 .nav-bar span:hover {
@@ -247,6 +249,7 @@ body {
     justify-content: center;
     background-color: var(--main-header-color);
     padding: 5vh 0;
+    width: 100%;
 }
 
 #introduction {
@@ -429,7 +432,6 @@ body {
 
 /* Contact Container and details */
 .form-div, .footer_container {
-    padding: 5px
 }
 
 #contact-container {
