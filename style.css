@@ -2,7 +2,6 @@
     --main-header-color: #173F5F;
     --main-light-color: #3CAEA3; 
     --highlight-color: #F6D55C;
-
     --orange-color: #f4a261;
     --red-color: #e76f51;
     --blue-color: #264653;
@@ -38,6 +37,7 @@ body {
     overflow-x: hidden;
     transition: 0.5s;
     display: inline-flex;
+
 }
 
 .page-links {
@@ -47,6 +47,7 @@ body {
     font-size: 1.5rem;
     width: 100%;
     padding: 1.5rem 0;
+    margin: 0;
     text-align: center;
 }
 
@@ -65,7 +66,7 @@ body {
     top: 3px;
     font-size: 3rem;
     position: absolute;
-    right: 5px;
+    right: 15px;
 }
 
 
@@ -79,11 +80,11 @@ body {
     left: 0;
 }
 
-
 #nav-bar {
     opacity: 1;
-    width: 100%;
+    width: 100vw;
     transition: 0.5s;
+    overflow-x: hidden;
 }
 
 .nav-bar {
@@ -431,9 +432,6 @@ body {
 
 
 /* Contact Container and details */
-.form-div, .footer_container {
-}
-
 #contact-container {
     display: flex;
     flex-direction: column;
