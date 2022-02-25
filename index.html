@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="I'm a web developer specializing in HTML, CSS, and JavaScript. With an educational and Data Analytics background I know how to use statistical content to make your brand stick.">
+    <meta name="description" content="I'm a software engineer specializing in HTML, CSS, and JavaScript. With an educational and Data Analytics background I know how to use statistical content to make your brand stick.">
     <meta name="keywords" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -43,9 +43,9 @@
                 <a href="#recent_work">Projects</a>
                 <a href="#footer">Contact</a>
             </div>
-            <a href="" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
         </div>
-        <span href="" onclick="openNav()">&#9776</span>
+        <span href="javascript:void(0);" onclick="openNav()">&#9776</span>
         </div>
     </div>
 
@@ -68,7 +68,7 @@
         </div>
         
         <div class="right-side-header">
-            <img src="images/reduced-size-imgs/jacob_bag copy.jpeg" alt="Jacob Emoji" id="picture" data-aos="zoom-in" data-aos-duration="1500">
+            <img src="images/reduced-size-imgs/jacob_bag copy.jpeg" alt="Jacob Emoji" id="picture">
             <!-- <img src="images/web_dev_bg.jpeg" alt="landscape" id="landscape"> -->
         </div>
         
@@ -77,22 +77,23 @@
     <div id="recent_work">
         <div class="work_intro">
             <h2 id="recent_header">Recent Work</h2>
-            <p>Here are a few projects. <br> Want to see more?<strong><a href="contact" class="email"> Send me a message </a></strong></p>
+            <p>Here are a few projects. <br> Want to see more?<strong><a href="#footer" class="email"> Send me a message </a></strong></p>
         </div>
 
         <div class="projects">
                 <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
-                    <a href="https://js20-light-dark-mode.netlify.app/" target="_blank">
-                    <img class="project" src="images/reduced-size-imgs/light-dark-travel-website copy.png"></a>
-                    <p class="project-title">Light/Dark Travel Website</p>
-                    <p>Tech: DOM, localStorage</p>
-                </div>
+                    <a href="https://www.kaggle.com/jacobegood/bikesharing-google-data-analytics" target="_blank">
+                    <img class="project" id="bike" src="images/google_bike_sharing.png"></a>
+                    <p class="project-title">Bikesharing Data Analytics</p>
+                    <p>Tech: R, tidyverse, ggplot2</p>
+                </div> 
 
                 <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                     <a href="https://optimistic-ritchie-2e4770.netlify.app/#services" target="_blank"><img class="project" id="cpa-website" src="images/reduced-size-imgs/CPA-website.png"></a>
                     <p class="project-title">Business Website</p>
                     <p>Tech: HTML, CSS, JS</p>
                 </div>
+
 
                 <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                     <a href="https://bankcat-website-mockup.netlify.app/" target="_blank">
@@ -101,6 +102,14 @@
                     <p>Tech: HTML, CSS, JS</p>
                 </div>
                 
+                <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
+                    <a href="https://js20-projects-quote-generator.netlify.app/" target="_blank">
+                    <img class="project" src="images/reduced-size-imgs/quote-generator copy.png"></a>
+                    <p class="project-title">Quote Generator</p>
+                    <p>Tech: Fetch, Quote API</p>
+                </div>
+
+
                 <!-- <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                     <a href="https://codepen.io/snake0good/full/MWEbVvK" target="_blank">
                     <img class="project" src="images/survey-form.png"></a>
@@ -108,20 +117,19 @@
                     <p>Tech: HTML, CSS</p>
                 </div> -->
 
-                
+
                 <!-- <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
-                    <a href="https://www.kaggle.com/jacobegood/bikesharing-google-data-analytics" target="_blank">
-                    <img class="project" id="bike" src="images/google_bike_sharing.png"></a>
-                    <p class="project-title">Bikesharing Data Analytics</p>
-                    <p>Tech: R, tidyverse, ggplot2</p>
+                    <a href="https://js20-light-dark-mode.netlify.app/" target="_blank">
+                    <img class="project" src="images/reduced-size-imgs/light-dark-travel-website copy.png"></a>
+                    <p class="project-title">Light/Dark Travel Website</p>
+                    <p>Tech: DOM, localStorage</p>
                 </div> -->
 
-                <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
-                    <a href="https://js20-projects-quote-generator.netlify.app/" target="_blank">
-                    <img class="project" src="images/reduced-size-imgs/quote-generator copy.png"></a>
-                    <p class="project-title">Quote Generator</p>
-                    <p>Tech: Fetch, Quote API</p>
-                </div>
+                <!-- <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
+                    <a href="https://codepen.io/snake0good/full/KKXNNOO" target="_blank"><img class="project" id="norman-borlaug" src="images/norman-borlaug.png"></a>
+                    <p class="project-title">Tribute Page</p>
+                    <p>Tech: HTML, CSS</p>
+                </div> -->
         </div>
 
         <div class="kaggle-codepen-btns">
