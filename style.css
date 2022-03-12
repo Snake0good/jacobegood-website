@@ -411,10 +411,10 @@ body {
 }
 
 .project:hover {
-    box-shadow: 0 0 8px 2px var(--blue-color);
-    transition: transform 0.5s;
+    box-shadow: 0 0 5px 1px var(--main-header-color);
+    transition: 0.5s;
     transition-timing-function: ease-in-out;
-    transform: scale(1.05);
+    /* transform: scale(1.05); */
 }
 
 .kaggle-codepen-btns {
@@ -435,6 +435,8 @@ body {
 .kaggle:hover {
     color: white;
     background: var(--main-header-color);
+    box-shadow: 0 0 5px 1px var(--blue-color);
+    transition: 1.5s;
 }
 
 
@@ -547,6 +549,23 @@ body {
     transform: scale(1.);
 }
 
+@media all and (max-width: 845px) {
+    .project {
+        border: 2px solid var(--main-header-color);
+        border-radius: 5px;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .project-container {
+        width: 300px;
+        margin: 10px;
+        padding: 0;
+    }
+
+}
+
 @media only screen and (max-width: 700px) {
     #introduction {
         text-align: center;
@@ -596,11 +615,12 @@ body {
 
     .project-container {
         width: 100%;
+        width: 250px;
     }
 
     .project {
         width: 90%;
-        height: 50vh;
+        height: 250px;
         margin: 25px 0 25px 0;
     }
 
