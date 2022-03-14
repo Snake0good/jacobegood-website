@@ -38,7 +38,11 @@ body {
     left: 0;
     background-color: var(--main-header-color);
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
     display: inline-flex;
     margin: 0; 
     padding: 0;
@@ -59,8 +63,12 @@ body {
     text-decoration: none;
     color: var(--yellow-color);
     display: block;
-    transition: 0.5s;
-}v
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+}
 
 .topNav a:hover {
     color: var(--red-color)
@@ -83,7 +91,11 @@ body {
 #nav-bar {
     opacity: 1;
     width: 100%;
-    transition: 0.5s;
+    transition: all 0.5s;
+    -o-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
     overflow-x: hidden;
 }
 
@@ -232,6 +244,11 @@ body {
     width: 250px;
     margin: 0 0 25px 0;
     border-radius: 5px;
+    transition: 1s;
+}
+
+#picture:hover {
+    border-radius: 25px;
 }
 
 #landscape {
@@ -408,13 +425,15 @@ body {
     object-fit: contain;
     background-color: var(--main-header-color);
     margin: 10px;
+    transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
 }
 
 .project:hover {
     box-shadow: 0 0 5px 1px var(--main-header-color);
-    transition: 0.5s;
-    transition-timing-function: ease-in-out;
-    /* transform: scale(1.05); */
 }
 
 .kaggle-codepen-btns {
@@ -428,19 +447,20 @@ body {
     width: 200px;
     height: 50px;
     border: 2px solid var(--main-header-color);
-    border-radius: 12px;
-    margin: 25px
+    border-radius: 2px;
+    margin: 25px;
+    transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
 }
 
 .kaggle:hover {
     color: white;
     background: var(--main-header-color);
-    box-shadow: 0 0 5px 1px var(--blue-color);
-    transition: 1.5s;
+    border-radius: 25px;
 }
-
-
-
 
 
 
@@ -495,12 +515,15 @@ body {
     width: 50%;
     align-self: center;
     font-weight: bold;
+    transition: all 0.2s;
 }
 
 .btn:hover {
     color: black;
     border: 1px solid var(--main-header-color);
     background-color: white;
+    cursor: pointer;
+    transition: all 0.2s;
 }
 
 
@@ -645,15 +668,11 @@ body {
 
 }
 
-@media only screen and (max-width: 500px) {
+@media all and (max-width: 500px) {
     #picture {
         width: 200px;
         object-fit: cover;
     }
-    
-    /* .project {
-        height: 30vh;
-    } */
 
     .kaggle {
         margin: 15px;
