@@ -247,10 +247,6 @@ body {
     transition: 1s;
 }
 
-#picture:hover {
-    border-radius: 25px;
-}
-
 #landscape {
     width: 80%;
     object-fit: cover;
