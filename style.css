@@ -112,6 +112,18 @@ body {
     border-radius: 5px;
 }
 
+#portfolio {
+    text-decoration: none;
+    color: var(--blue-color);
+    transition: 0.3s all;
+    border-bottom: 1px solid transparent;
+}
+
+#portfolio:hover {
+    border-bottom: 1px solid var(--green-color);
+    color: var(--green-color);
+}
+
 /* this let's me center the intro */
 
 #written-intro-center {
