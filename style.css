@@ -112,16 +112,16 @@ body {
     border-radius: 5px;
 }
 
-#portfolio {
+#resume {
     text-decoration: none;
-    color: var(--blue-color);
+    color: var(--green-color);
     transition: 0.3s all;
     border-bottom: 1px solid transparent;
 }
 
-#portfolio:hover {
-    border-bottom: 1px solid var(--green-color);
-    color: var(--green-color);
+#resume:hover {
+    border-bottom: 1px solid var(--blue-color);
+    color: var(--blue-color);
 }
 
 /* this let's me center the intro */
