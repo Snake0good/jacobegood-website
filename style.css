@@ -10,6 +10,9 @@
     --green-color: #2a9d8f;
     --yellow-color: #e9c46a;
     --white-color: #ddf0f0;
+    
+    /* box shadowing */
+    --main-header-dark-shadow: rgba(23, 63, 95, 0.5);
 }
 
 * {
@@ -318,8 +321,10 @@ body {
 }
 
 .project:hover {
-    box-shadow: 0 0 5px 1px var(--main-header-color);
+    box-shadow: 0 0 12px 7px var(--main-header-dark-shadow);
+    transform: scale(1.005);
 }
+
 
 .kaggle-codepen-btns {
     margin: 35px;
