@@ -9,8 +9,11 @@
     <link rel="stylesheet" href="style.css">
     <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" data-auto-replace-svg="nest"></script>
     <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="images/logo-jacob-good-favicon.png">
+    <link rel="icon" type="image/x-icon" href="images/jacob-good.ico">
 
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
 
     <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     
@@ -39,7 +42,8 @@
     <div id="nav-bar" class="nav-bar">
         <li><a href="#about">About</a></li>
         <li><a href="#recent_work">Projects</a></li>
-        <li><a href="#footer">Contact</a></li>
+        <li id="contact"><a href="#footer">Contact</a></li>
+        <li><a href="https://snake0.hashnode.dev/">Blog</a></li>
     </div>
 
     
@@ -55,16 +59,64 @@
     
     <div id="headers">
         <div class="left-side-header">
-            <h1 id="name" class="hi typewriter">Hi! I'm Jacob</h1>
+            <div class="left-hero">
 
-            <p>My <strong>D-D-D</strong> skills will help your business grow. <br> I teach, design, code <br> and analyze great chunks of data. <br> Want to see my <a id="resume" href="Software Engineer - Jacob Good.pdf" target="_blank">resume</a>?</p> 
+                <h1 id="name" class="hi typewriter">Hi! I'm Jacob</h1>
+                
+                <p>My <strong>D-D-D</strong> skills helps your business grow. I teach, design, code and analyze great chunks of data. 
+                    
+                    <br> 
+                    Want to <a href="#footer">hire me</a>?
+                    <br>
+                    Want to see my <a id="resume" href="Software Engineer - Jacob Good.pdf" target="_blank">resume</a>?</p> 
+            </div>
         </div>
         
         <div class="right-side-header">
             <img src="images/reduced-size-imgs/jacob_bag copy.jpeg" alt="Jacob Emoji" id="picture">
             <!-- <img src="images/web_dev_bg.jpeg" alt="landscape" id="landscape"> -->
         </div>
-        
+    </div>
+
+    <div id="skills">
+        <h1>Tech Stack and Skills</h1>
+        <div class="skills">
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />  
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg" />
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />     
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" />
+
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" />   
+            
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original-wordmark.svg" />
+          
+          
+          
+        </div>
     </div>
 
     <div id="recent_work">
@@ -73,14 +125,38 @@
         </div>
 
         <div class="projects">
-                <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
+            <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                 <a href="https://warm-travesseiro-ef82be.netlify.app/" target="_blank">
                 <img class="project" src="images/reduced-size-imgs/qr-code-react.png"></a>
                 <p class="project-title">Personal QR Code Generator</p>
                 <p>Take any website and translate it into a QR code to share.</p>
-                <a class="a-btn code" href="https://github.com/Snake0good/React-QR-Code-Generator" target="_blank" alt="github">Code</a>
-                <a class="a-btn" href="https://warm-travesseiro-ef82be.netlify.app/" target="_blank">Live</a>
-                <p><b>Tech Stack:</b> QR API, React</p>
+                <div>
+                    <a class="a-btn code" href="https://github.com/Snake0good/React-QR-Code-Generator" target="_blank" alt="github">Code</a>
+                    <a class="a-btn" href="https://warm-travesseiro-ef82be.netlify.app/" target="_blank">Live</a>
+                </div>
+                <p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />  
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />     
+                </p>
+            </div>
+            
+            <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
+                <a href="https://node-heroku-deployment-todo.herokuapp.com/" target="_blank">
+                <img class="project" src="images/doodiesApp.png"></a>
+                <p class="project-title">Personal Todo App</p>
+                <p>Keep track of your must do things each day. Local storage keeps track of all your items!</p>
+                <div>
+                    <a class="a-btn code" href="https://node-heroku-deployment-todo.herokuapp.com/" target="_blank" alt="github">Code</a>
+                    <a class="a-btn" href="https://node-heroku-deployment-todo.herokuapp.com/" target="_blank">Live</a>
+                </div>
+                <p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-original.svg" />     
+                </p>
             </div>
 
             <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
@@ -88,18 +164,30 @@
                 <img class="project" src="images/reduced-size-imgs/spelling-bee.png"></a>
                 <p class="project-title">Spelling Bee</p>
                 <p>I created a spelling game for my 3 year old daughter to help her learn new words.</p>
-                <a class="a-btn code" href="https://github.com/Snake0good/Drag-and-Drop-Spelling-Game" target="_blank" alt="github">Code</a>
-                <a class="a-btn" href="https://spelling-bee-abc.netlify.app/" target="_blank">Live</a>
-                <p><b>Tech Stack:</b> Javascript, interactjs.io, HTML/CSS </p>
+                <div>
+                    <a class="a-btn code" href="https://github.com/Snake0good/Drag-and-Drop-Spelling-Game" target="_blank" alt="github">Code</a>
+                    <a class="a-btn" href="https://spelling-bee-abc.netlify.app/" target="_blank">Live</a>
+                </div>
+                <p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />  
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                </p>
             </div>
 
             <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                 <a href="https://titan-fitness-rittenhouse-square.netlify.app/" target="_blank"><img class="project" id="fitness-website" src="images/reduced-size-imgs/titan-fitness-landing-page.png"></a>
                 <p class="project-title">Titan Fitness</p>
                 <p>Gym website for a company based in Philadelphia.</p>
-                <a class="a-btn code" href="https://github.com/Snake0good/Titan-Fitness" target="_blank" alt="github">Code</a>
-                <a class="a-btn" href="https://titan-fitness-rittenhouse-square.netlify.app/" target="_blank">Live</a>
-                <p><b>Tech Stack:</b> HTML, CSS, JS</p>
+                <div>
+                    <a class="a-btn code" href="https://github.com/Snake0good/Titan-Fitness" target="_blank" alt="github">Code</a>
+                    <a class="a-btn" href="https://titan-fitness-rittenhouse-square.netlify.app/" target="_blank">Live</a>
+                </div>
+                <p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />  
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                </p>
             </div>
 
 
@@ -108,9 +196,15 @@
                 <img class="project" src="images/reduced-size-imgs/bankCatWebpage copy.png"></a>
                 <p class="project-title">BankCat</p>
                 <p>Manage your money and transactions easily.</p>
-                <a class="a-btn code" href="https://github.com/Snake0good/BankCat-Website" target="_blank" alt="github">Code</a>
-                <a class="a-btn" href="https://bankcat-website-mockup.netlify.app/" target="_blank">Live</a>
-                <p><b>Tech Stack:</b> HTML, CSS, JS</p>
+                <div>
+                    <a class="a-btn code" href="https://github.com/Snake0good/BankCat-Website" target="_blank" alt="github">Code</a>
+                    <a class="a-btn" href="https://bankcat-website-mockup.netlify.app/" target="_blank">Live</a>
+                </div>
+                <p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />  
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                </p>
             </div>
 
             <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
@@ -118,10 +212,17 @@
                 <img class="project" src="images/reduced-size-imgs/quiz-app.png"></a>
                 <p class="project-title">You Don't Know JS</p>
                 <p>Designed and wrote a quiz app for my fellow students studying in the #100Devs bootcamp</p>
-                <a class="a-btn code" href="https://github.com/Snake0good/100Devs-Quiz" target="_blank" alt="github">Code</a>
-                <a class="a-btn" href="https://100devs-html-css-javascript-quiz.netlify.app/" target="_blank">Live</a>
-                <p><b>Tech Stack:</b> HTML, CSS, JS</p>
+                <div>
+                    <a class="a-btn code" href="https://github.com/Snake0good/100Devs-Quiz" target="_blank" alt="github">Code</a>
+                    <a class="a-btn" href="https://100devs-html-css-javascript-quiz.netlify.app/" target="_blank">Live</a>
+                </div>
+                <p>
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />  
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                </p>
             </div>
+
 
                  <!-- <div class="project-container" data-aos="flip-down" data-aos-duration="1000"> 
                     <a href="https://github.com/Snake0good/Coursera_Capstone/blob/main/README.md" target="_blank">
@@ -174,8 +275,12 @@
         
             <a href="https://codepen.io/snake0good" target="_blank"><button class="kaggle codepen">Front End: <i class="fab fa-codepen"></i></button></a>
 
-            <a href="https://www.github.com/Snake0good" target="_blank"><button class="kaggle codepen">Github Repos: <i class="fab fa-github"></i></button></a>
+            <a href="https://www.github.com/Snake0good" target="_blank"><button class="kaggle codepen">Github Repositories: <i class="fab fa-github"></i></button></a>
         </div>  
+
+        <div class="skill-set-icons">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+        </div>
     </div>
 
 
@@ -227,23 +332,25 @@
 
 
     <footer class="footer" id="footer">
-        <div class="form-div">   
-            <form action="https://formsubmit.co/b48ed778ae9db8286495eadc0e3120ed" name="myform" method="POST" id="contact-container">
-                <h1 id="contact-title">Send a message</h1>
-        
-                <label for="name">Name</label>
-                <input class="input" name="name" id="name" type="text" placeholder="Enter your name" required>
-        
-                <label for="email">Email</label>
-                <input class="input" name="email" id="email" type="email" placeholder="Enter your email">
-        
-                <label for="message">Message</label>
-                <textarea id="message" name="message" placeholder="Please enter your comments" rows=5 required></textarea>
-        
-                <button class="btn" id="submit">Send Message</button>
-            </form> 
+        <div class="form-container">
+            <div class="form-div">   
+                <form action="https://formsubmit.co/b48ed778ae9db8286495eadc0e3120ed" name="myform" method="POST" id="contact-container">
+                    <h1 id="contact-title">Send a message</h1>
+                    
+                    <label for="name">Name</label>
+                    <input class="input" name="name" id="name" type="text" placeholder="Enter your name" required>
+                    
+                    <label for="email">Email</label>
+                    <input class="input" name="email" id="email" type="email" placeholder="Enter your email">
+                    
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" placeholder="Please enter your comments" rows=5 required></textarea>
+                    
+                    <button class="btn" id="submit">Send Message</button>
+                </form> 
+            </div>
         </div>
-
+            
         <div class="footer_container">
             <div class="quote-div">
                 <h3 class="outro">"In battle, plans are useless, but planning is indispensible." - Dwight D. Eisenhower</h3>
