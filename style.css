@@ -10,7 +10,7 @@
     --green-color: #2a9d8f;
     --yellow-color: #e9c46a;
     --white-color: #ddf0f0;
-    
+
     /* box shadowing */
     --main-header-dark-shadow: rgba(23, 63, 95, 0.5);
 }
@@ -65,6 +65,18 @@ body {
     border-bottom: 2px solid var(--white-color);
 }
 
+.left-hero {
+    width: 500px;
+}
+
+@media all and (max-width: 500px) {
+    #contact {
+        display: none
+    }
+    .left-hero {
+        width: 100%;
+    }
+}
 
 .main-header h1{
     text-align: center;
@@ -183,6 +195,36 @@ body {
 }
 */
 
+#skills {
+    text-align: center; 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--blue-color)
+}
+
+.skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 25px;
+}
+
+.skills>img {
+    width: 4rem;
+    margin: 0.6rem;
+    border-radius: 8px;
+    box-shadow: 5px 5px 6px 2px rgba(0,0,0,0.2);
+}
+
+@media all and (min-width: 700px) {
+    .skills {
+        width: 620px;
+
+    }
+}
+
 
 /* Designer, Front-end Developer, Data Analyst */
 .icons {
@@ -259,12 +301,24 @@ body {
 .project-container {
     width: 400px;
     margin: 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-container p {
     margin: 0;
     padding: 0 10px;
+    margin: 0.5rem;
     font-size: 1rem;
+    display: inline-flex;
+    align-items: center;
+}
+
+.project-container p>img {
+    width: 2rem
 }
 
 .project-container .a-btn {
@@ -321,13 +375,13 @@ body {
 }
 
 .project:hover {
-    box-shadow: 0 0 12px 7px var(--main-header-dark-shadow);
+    box-shadow: 5px 5px 6px 4px var(--main-header-dark-shadow);
     transform: scale(1.005);
 }
 
-
 .kaggle-codepen-btns {
     margin: 35px;
+
 }
 
 
@@ -420,8 +474,6 @@ body {
 
 
 
-
-
 /* This is the footer to end the day */
 .footer {
     background: var(--main-header-color);
@@ -431,15 +483,16 @@ body {
     color: whitesmoke;
     position: relative;
     padding: 0 25px;
+    width: 100%;
 }
 
-.footer_container {
+.footer_container, .form-container {
     bottom: 0;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 50%;
 }
 
 .footer_container h3 {
