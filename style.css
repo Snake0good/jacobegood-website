@@ -220,7 +220,7 @@ body {
 
 @media all and (min-width: 700px) {
     .skills {
-        idth: 690px;
+        width: 680px;
 
     }
 }
