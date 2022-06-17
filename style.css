@@ -127,14 +127,14 @@ body {
     border-radius: 5px;
 }
 
-#resume {
+.highlight {
     text-decoration: none;
     color: var(--green-color);
     transition: 0.3s all;
     border-bottom: 1px solid transparent;
 }
 
-#resume:hover {
+.highlight:hover {
     border-bottom: 1px solid var(--blue-color);
     color: var(--blue-color);
 }
