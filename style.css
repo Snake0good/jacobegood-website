@@ -70,7 +70,7 @@ body {
 }
 
 @media all and (max-width: 500px) {
-    #contact {
+    #about {
         display: none
     }
     .left-hero {
