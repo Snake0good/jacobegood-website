@@ -68,6 +68,9 @@ body {
 .left-hero {
     width: 500px;
 }
+.left-hero p {
+    padding: 10px;
+}
 
 @media all and (max-width: 500px) {
     #about {
@@ -593,7 +596,6 @@ body {
     }
 
     .project {
-        width: 90%;
         height: 250px;
         margin: 25px 0 25px 0;
     }
