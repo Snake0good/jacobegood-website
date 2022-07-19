@@ -143,17 +143,22 @@ body {
 }
 
 /* this let's me center the intro */
-
 #written-intro-center {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    background-color: var(--main-header-color);
-    padding: 5vh 0;
     width: 100%;
 }
 
 #introduction {
+    display: flex;
+    justify-content: center;
     color: white;
+    margin-top: -5vh;
+    background-color: var(--main-header-color);
+    position: relative;
+}
+#introduction>div {
     width: 80%;
     max-width: 850px;
 }
@@ -211,20 +216,29 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin: 25px;
+    margin: 3rem;
 }
 
-.skills>img {
-    width: 4rem;
-    margin: 0.6rem;
+.skills div img {
+    margin: 0 1.4rem;
+    width: 3rem;
     border-radius: 8px;
     box-shadow: 5px 5px 6px 2px rgba(0,0,0,0.2);
 }
+.skills div p {
+    font-size: 0.8rem;
+}
 
-@media all and (min-width: 700px) {
+@media all and (min-width: 900px) {
     .skills {
-        width: 680px;
-
+        width: 900px;
+    }
+    .skills div img {
+        width: 5rem;
+        margin: 0 2rem;
+    }
+    .skills div p {
+        font-size: 1rem;
     }
 }
 
@@ -302,7 +316,7 @@ body {
 }
 
 .project-container {
-    width: 400px;
+    width: 500px;
     margin: 10px;
     display: flex;
     flex-direction: column;
@@ -364,8 +378,8 @@ body {
 .project {
     border: 2px solid var(--main-header-color);
     border-radius: 5px;
-    width: 300px;
-    height: 250px;
+    width: 400px;
+    height: 320px;
     image-orientation: center center;
     object-fit: contain;
     background-color: var(--main-header-color);
@@ -382,11 +396,11 @@ body {
     transform: scale(1.005);
 }
 
+
 .kaggle-codepen-btns {
     margin: 35px;
 
 }
-
 
 .kaggle {
     font-size: 1.1rem;
@@ -546,7 +560,6 @@ body {
 @media all and (max-width: 700px) {
     #introduction {
         text-align: center;
-        background-color: var(--main-header-color);
         color: white;
         width: 100%;
         line-height: 1.4rem;   
@@ -631,3 +644,8 @@ body {
         margin: 15px;
     }
 }
+
+
+/* *{ 
+    outline: 1px solid red;
+} */
