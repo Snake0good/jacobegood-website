@@ -329,9 +329,12 @@ body {
     margin: 0;
     padding: 0 10px;
     margin: 0.5rem;
-    font-size: 1rem;
     display: inline-flex;
     align-items: center;
+}
+
+.project-description {
+    font-size: 1rem;
 }
 
 .project-container p>img {
@@ -363,7 +366,7 @@ body {
 .project-title {
     color: var(--main-header-color);
     font-weight: bolder;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
 }
 
 .project-container img {
