@@ -321,7 +321,7 @@ body {
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    justify-content: top;
     align-items: center;
 }
 
@@ -650,6 +650,6 @@ body {
 }
 
 
-/* *{ 
+*{ 
     outline: 1px solid red;
-} */
+}
