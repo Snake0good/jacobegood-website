@@ -155,6 +155,7 @@ body {
     justify-content: center;
     color: white;
     margin-top: -5vh;
+    margin-bottom: -5px;
     background-color: var(--main-header-color);
     position: relative;
 }
